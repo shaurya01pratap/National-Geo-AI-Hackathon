@@ -22,28 +22,28 @@ Create folders in the root folder (Theme 1) as follows, along with the cloned fi
 
 \`\`\`text
 Theme 1/
-├── Final Model Training + Predictions/
-│   ├── test_predictions/
-│   ├── test_predictions_overlap/
-│   ├── test_predictions_report/
-├── processed_tiles/    #leave empty until you run chhattisgarh_tiling_masking.ipynb and punjab_tiling_masking.ipynb
-│   ├── images/
-│   │   ├── chhattisgarh/
-│   │   └── punjab/
-│   └── masks/
-│       ├── chhattisgarh/
-│       └── punjab/
-├── raw_images/
-│   ├── chhattisgarh/    #upload 5 .tif files for chhattisgarh training villages (Convert any .ecw to .tifs if needed)
-│   └── punjab/          #upload 5 .tif files for punjab training villages (Convert any .ecw to .tifs if needed)
-├── raw_shapes/
-│   ├── chhattisgarh/    #upload shp folder package for chhattisgarh training villages
-│   └── punjab/          #upload shp folder package for punjab training villages
-├── test_data/
-│   ├── chhattisgarh/    #upload 5 test .tif files for chhattisgarh training villages (Convert any .ecw to .tifs if needed)
-│   └── punjab/          #upload 5 test .tif files for punjab training villages (Convert any .ecw to .tifs if needed)
-
-\`\`\`
+├── Final Model Training + Predictions/  
+│   ├── test_predictions/  
+│   ├── test_predictions_overlap/  
+│   ├── test_predictions_report/  
+├── processed_tiles/    #leave empty until you run chhattisgarh_tiling_masking.ipynb and punjab_tiling_masking.ipynb  
+│   ├── images/  
+│   │   ├── chhattisgarh/  
+│   │   └── punjab/  
+│   └── masks/  
+│       ├── chhattisgarh/  
+│       └── punjab/  
+├── raw_images/  
+│   ├── chhattisgarh/    #upload 5 .tif files for chhattisgarh training villages (Convert any .ecw to .tifs if needed)  
+│   └── punjab/          #upload 5 .tif files for punjab training villages (Convert any .ecw to .tifs if needed)  
+├── raw_shapes/  
+│   ├── chhattisgarh/    #upload shp folder package for chhattisgarh training villages  
+│   └── punjab/          #upload shp folder package for punjab training villages  
+├── test_data/  
+│   ├── chhattisgarh/    #upload 5 test .tif files for chhattisgarh training villages (Convert any .ecw to .tifs if needed)  
+│   └── punjab/          #upload 5 test .tif files for punjab training villages (Convert any .ecw to .tifs if needed)  
+  
+\`\`\`  
 
 ## 🏃‍♂️ How to Run
 
