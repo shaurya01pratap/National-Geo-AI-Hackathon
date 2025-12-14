@@ -15,29 +15,34 @@ git clone https://github.com/YOUR_USERNAME/National-Geo-AI-Hackathon.git
 cd National-Geo-AI-Hackathon
 \`\`\`
 
-### 2. Install Dependencies
-Ensure you have Python installed. Install the required libraries (e.g., TensorFlow/PyTorch, Rasterio, OpenCV, GeoPandas):
-\`\`\`bash
-pip install -r requirements.txt
-\`\`\`
-*(If a requirements file is not provided, install the necessary libraries manually).*
-
-### 3. ⚠️ Data Setup (Crucial)
+### 2. ⚠️ Data Setup (Crucial)
 Since the dataset is not uploaded, you must set up the data locally for the code to run.
-
-1.  Create a folder named **\`data\`** inside the \`Theme1/\` directory.
-2.  Create a folder named **\`processed_tiles\`** inside the \`Theme1/\` directory.
-3.  Place your source files as follows:
+Download the data from this link: https://docs.google.com/spreadsheets/d/1PNDSmS6M63XH-0ed6OYVYLRHc_CgtZMy/edit?gid=2013070920#gid=2013070920
+Create folders in the root folder (Theme 1) as follows, along with the cloned files:
 
 \`\`\`text
-Theme1/
-├── data/
-│   ├── train_images/       # Place raw orthophotos here
-│   ├── train_shapefiles/   # Place corresponding shapefiles here
-│   └── test_images/        # Place testing data here
-├── processed_tiles/        # Leave empty (script saves output here)
-├── your_script.ipynb       # The main code file
-└── ...
+Theme 1/
+├── Final Model Training + Predictions/
+│   ├── test_predictions/
+│   ├── test_predictions_overlap/
+│   ├── test_predictions_report/
+├── processed_tiles/    #leave empty until you run chhattisgarh_tiling_masking.ipynb and punjab_tiling_masking.ipynb
+│   ├── images/
+│   │   ├── chhattisgarh/
+│   │   └── punjab/
+│   └── masks/
+│       ├── chhattisgarh/
+│       └── punjab/
+├── raw_images/
+│   ├── chhattisgarh/    #upload 5 .tif files for chhattisgarh training villages (Convert any .ecw to .tifs if needed)
+│   └── punjab/          #upload 5 .tif files for punjab training villages (Convert any .ecw to .tifs if needed)
+├── raw_shapes/
+│   ├── chhattisgarh/    #upload shp folder package for chhattisgarh training villages
+│   └── punjab/          #upload shp folder package for punjab training villages
+├── test_data/
+│   ├── chhattisgarh/    #upload 5 test .tif files for chhattisgarh training villages (Convert any .ecw to .tifs if needed)
+│   └── punjab/          #upload 5 test .tif files for punjab training villages (Convert any .ecw to .tifs if needed)
+
 \`\`\`
 
 ## 🏃‍♂️ How to Run
@@ -46,14 +51,8 @@ Theme1/
     \`\`\`bash
     cd Theme1
     \`\`\`
-2.  Open the main notebook/script:
-    \`\`\`bash
-    # Example if using Jupyter
-    jupyter notebook
-    \`\`\`
-3.  Run the cells sequentially. The script will:
-    * Load images from the \`data/\` folder.
-    * Generate tiles and save them to \`processed_tiles/\`.
-    * Train the model and generate predictions.
+2.  Run chhattisgarh_tiling_masking.ipynb and punjab_tiling_masking.ipynb
+3.  Run Final Model Training + Predictions/model_training+predictions_ipynb
+    
 
 EOF
