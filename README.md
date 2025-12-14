@@ -17,10 +17,11 @@ cd National-Geo-AI-Hackathon
 
 ### 2. ⚠️ Data Setup (Crucial)
 Since the dataset is not uploaded, you must set up the data locally for the code to run.
+
 Download the data from this link: https://docs.google.com/spreadsheets/d/1PNDSmS6M63XH-0ed6OYVYLRHc_CgtZMy/edit?gid=2013070920#gid=2013070920
+
 Create folders in the root folder (Theme 1) as follows, along with the cloned files:
 
-\`\`\`text
 Theme 1/
 ├── Final Model Training + Predictions/  
 │   ├── test_predictions/  
@@ -43,7 +44,6 @@ Theme 1/
 │   ├── chhattisgarh/    #upload 5 test .tif files for chhattisgarh training villages (Convert any .ecw to .tifs if needed)  
 │   └── punjab/          #upload 5 test .tif files for punjab training villages (Convert any .ecw to .tifs if needed)  
   
-\`\`\`  
 
 ## 🏃‍♂️ How to Run
 
